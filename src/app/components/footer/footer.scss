@@ -1,0 +1,135 @@
+.footer {
+  background-color: var(--color-bg);
+  color: var(--color-text-light);
+  font-family: var(--font-family);
+  padding: 3rem 2rem 1.5rem;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__left {
+    flex: 1;
+
+    .footer__title {
+      font-family: var(--font-secondary);
+      font-size: 1.5rem;
+      margin-bottom: 0.3rem;
+      color: var(--color-text);
+    }
+
+    .footer__text {
+      margin-bottom: 1rem;
+      color: var(--color-text-light);
+    }
+
+    .footer__socials {
+      display: flex;
+      gap: 0.8rem;
+
+      .social-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(200, 200, 200, 0.4); // gris claro neutro
+        color: var(--color-text-light);
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: linear-gradient(
+            135deg,
+            var(--color-primary),
+            var(--color-tertiary)
+          );
+          color: var(--color-text);
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  &__right {
+    flex: 1;
+
+    .footer__subtitle {
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+      color: var(--color-text);
+    }
+
+    .footer__links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      li a {
+        color: var(--color-text-light);
+        transition: all 0.2s ease;
+
+        &:hover {
+          color: var(--color-primary);
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+  }
+
+  // Dark Mode
+  body.dark & {
+    background-color: #1a1a1a;
+    color: #ccc;
+
+    .footer__title,
+    .footer__subtitle {
+      color: #fff;
+    }
+
+    .footer__links li a {
+      color: #aaa;
+
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+
+    .social-icon {
+      background-color: #333;
+      color: #ccc;
+
+      &:hover {
+        background: linear-gradient(
+          135deg,
+          var(--color-primary),
+          var(--color-tertiary)
+        );
+        color: var(--color-text);
+      }
+    }
+  }
+}

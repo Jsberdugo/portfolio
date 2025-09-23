@@ -1,0 +1,43 @@
+<section class="main-section" id="sobre-mi">
+  <div class="sobremi-wrapper">
+    <!-- Imagen / Avatar -->
+    <div class="sobremi-image" [appAnimateOnScroll]="'fade-left'">
+      <img src="/img/sobremi.png" alt="Ilustración desarrollador" />
+    </div>
+
+    <!-- Presentación -->
+    <div
+      class="sobremi-card"
+      [appAnimateOnScroll]="'fade-right'"
+      [animationDelay]="100"
+    >
+      <div class="sobremi-title">
+        <fa-icon icon="user-check"></fa-icon>
+        <h1>Sobre mí</h1>
+      </div>
+
+      <p>
+        Soy <strong>Juan Simón</strong>, ingeniero en computación y
+        desarrollador web especializado en <strong>front-end</strong>. Me
+        apasiona crear experiencias digitales atractivas, funcionales y de alto
+        rendimiento.
+      </p>
+    </div>
+
+    <!-- Trayectoria -->
+    <div
+      class="sobremi-detail"
+      [appAnimateOnScroll]="'fade-right'"
+      [animationDelay]="300"
+    >
+      <p>
+        Con más de un año de experiencia, he trabajado en agencias como
+        <strong>Erys Creative</strong> y <strong>Websiffy</strong>,
+        desarrollando más de 20 sitios web con
+        <strong>WordPress (Elementor y Divi)</strong>. Actualmente estoy
+        enfocándome en <strong>Angular</strong> y frameworks modernos para crear
+        interfaces dinámicas, escalables y optimizadas.
+      </p>
+    </div>
+  </div>
+</section>

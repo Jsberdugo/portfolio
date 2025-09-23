@@ -1,1 +1,178 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "LiberationMono";
+  src: url("assets/fonts/liberation_mono/LiberationMono-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Optional: improves font loading experience */
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("assets/fonts/ubuntu_font/Ubuntu.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Optional: improves font loading experience */
+}
+
+:root {
+  --color-primary: rgb(247, 223, 30);
+  --color-secondary: rgb(240, 190, 37);
+  --color-tertiary: rgb(228, 161, 38);
+  --color-bg: #f9f9f9;
+  --color-text: #202020;
+  --color-text-light: #4b4b4b;
+  --font-family: "Ubuntu", "Segoe UI", sans-serif;
+  --font-secondary: "LiberationMono", "Ubuntu", sans-serif;
+  /* You can add global styles to this file, and also import other style files */
+
+  // 🎨 Paleta
+  $color-primary: #f7df1e; // Amarillo principal
+  $color-secondary: #f0be25; // Hover / acentos
+  $color-tertiary: #e4a126; // Detalles
+
+  // ⚪ Neutros
+  $color-bg: #f9f9f9;
+  $color-text: #202020;
+  $color-text-light: #4b4b4b;
+
+  // 🔠 Tipografía
+  $font-family: "Ubuntu", "Segoe UI", sans-serif;
+  $font-secondary: "LiberationMono", "Ubuntu", sans-serif;
+  // 📏 Breakpoints
+  $bp-sm: 576px;
+  $bp-md: 768px;
+  $bp-lg: 992px;
+  $bp-xl: 1200px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  scroll-behavior: smooth;
+  font-family: var(--font-family);
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  background: linear-gradient(180deg, #fafafa 0%, #f2f2f2 50%, #e8e8e8 100%);
+  color: #202020; // texto oscuro
+  min-height: 100vh;
+  background-attachment: fixed; // efecto "parallax" ligero
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+
+  opacity: 0.1;
+  filter: contrast(200%) brightness(150%);
+}
+
+body.dark {
+  background: linear-gradient(180deg, #121212 0%, #1e1e1e 50%, #2c2c2c 100%);
+  color: #fff; // texto claro
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Fade Left */
+.fade-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-left.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Fade Right */
+.fade-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-right.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Fade Up */
+.fade-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-up.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+.long-fade-up {
+  opacity: 0;
+  transform: translateY(400px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.long-fade-up.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+// ===================
+// ANIMACIÓN SPIN
+// ===================
+@keyframes spin {
+  0% {
+    transform: rotate(-90deg) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+.spin {
+  opacity: 0;
+  transform: rotate(0deg);
+}
+
+.spin.animate {
+  opacity: 1;
+  animation: spin 1.5s ease-out forwards;
+}
+.slide-up {
+  opacity: 1;
+  transform: translateY(100px);
+}
+.slide-up.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 0.8s ease, transform 0.8s ease;
+}
+@media (max-width: 768px) {
+  .long-fade-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .long-fade-up.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
