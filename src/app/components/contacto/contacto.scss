@@ -20,9 +20,9 @@
   .contact-info {
     background: linear-gradient(
       to right,
-      var(--color-primary),
+      var(--color-primary) 0%,
       // Amarillo fuerte (#FFD600 o el tuyo)
-      var(--color-secondary),
+      var(--color-secondary) 86%,
       // Amarillo medio (#FFC107)
       var(--color-tertiary) // Amarillo claro (#FFEB3B)
     );
@@ -139,9 +139,9 @@
         font-size: 16px;
         background: linear-gradient(
           to right,
-          var(--color-primary),
+          var(--color-primary) 0%,
           // Amarillo fuerte (#FFD600 o el tuyo)
-          var(--color-secondary),
+          var(--color-secondary) 86%,
           // Amarillo medio (#FFC107)
           var(--color-tertiary) // Amarillo claro (#FFEB3B)
         );
