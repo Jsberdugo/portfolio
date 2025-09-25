@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable({ providedIn: 'root' })
 export class ContactService {
-  private apiUrl = 'https://send-email-worker.eascloudinary.workers.dev/'; // tu worker de Cloudflare
+  private apiUrl = 'https://send-email-worker.juansimonberdugo.workers.dev/'; // tu worker de Cloudflare
 
   constructor(private http: HttpClient) {}
 

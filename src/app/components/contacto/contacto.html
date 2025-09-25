@@ -1,4 +1,4 @@
-<section id="contact" class="contact">
+<section id="contacto" class="contact">
   <div class="contact-wrapper">
     <!-- Columna izquierda (amarilla) -->
     <div class="contact-info">
@@ -37,7 +37,11 @@
     </div>
 
     <!-- Columna derecha (formulario blanco) -->
-    <div class="contact-form">
+    <div
+      class="contact-form"
+      [appAnimateOnScroll]="'fade-up'"
+      [animationDelay]="200"
+    >
       <form
         [formGroup]="form"
         (ngSubmit)="submitForm()"

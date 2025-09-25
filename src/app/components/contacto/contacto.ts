@@ -49,7 +49,6 @@ export class Contacto implements OnInit {
 
   submitForm() {
     if (this.form.invalid) return;
-
     this.loading = true;
     this.contactService.sendMessage(this.form.value).subscribe({
       next: () => {
