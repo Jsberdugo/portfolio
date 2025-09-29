@@ -6,6 +6,14 @@
   font-style: normal;
   font-display: swap; /* Optional: improves font loading experience */
 }
+@font-face {
+  font-family: "LiberationMonoBold";
+  src: url("assets/fonts/liberation_mono/LiberationMono-Bold.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; /* Optional: improves font loading experience */
+}
 
 @font-face {
   font-family: "Ubuntu";
@@ -24,6 +32,7 @@
   --color-text-light: #4b4b4b;
   --font-family: "Ubuntu", "Segoe UI", sans-serif;
   --font-secondary: "LiberationMono", "Ubuntu", sans-serif;
+  --font-secondary-bold: "LiberationMonoBold", "Ubuntu", sans-serif;
   /* You can add global styles to this file, and also import other style files */
 
   // 🎨 Paleta
@@ -39,6 +48,7 @@
   // 🔠 Tipografía
   $font-family: "Ubuntu", "Segoe UI", sans-serif;
   $font-secondary: "LiberationMono", "Ubuntu", sans-serif;
+  $font-secondary-bold: "LiberationMonoBold", "Ubuntu", sans-serif;
   // 📏 Breakpoints
   $bp-sm: 576px;
   $bp-md: 768px;

@@ -1,19 +1,41 @@
 .main-section {
+  position: relative; // importante para posicionar las burbujas
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
+  min-height: 100vh;
+  padding: 0 2rem;
+  margin-top: 10px;
+  overflow: hidden; // evitar que salgan del container
 
   min-height: 100vh; // ocupa la altura completa de la pantalla
   padding: 0 2rem;
   margin-top: 10px; // espacio para que no choque con el header fijo
 
   .main-info {
+    z-index: 100;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 700px;
+    max-width: 1350px;
+    backdrop-filter: blur(5px);
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.342),
+      rgba(233, 233, 233, 0.349),
+      rgba(221, 221, 221, 0.151)
+    );
+    padding: 40px 230px;
+    border-radius: 25px;
+    margin: 80px auto;
+
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    @media (max-width: 768px) {
+      padding: 40px 10px;
+      margin: 20px auto;
+    }
   }
 
   .main-image {
@@ -43,9 +65,14 @@
     margin-top: 1rem;
     font-size: 1.2rem;
     line-height: 1.6;
-    color: var(--color-text-light);
+    color: var(--color-text);
     max-width: 600px;
     font-family: var(--font-secondary);
+    .span {
+      color: var(--color-tertiary);
+      font-weight: bolder;
+      font-family: var(--font-secondary-bold);
+    }
   }
 
   @media (max-width: 768px) {
@@ -55,6 +82,138 @@
 
     .main-description {
       font-size: 1rem;
+    }
+    padding: 0 1rem;
+  }
+
+  // ==== BURBUJAS ====
+  .bubbles {
+    position: absolute;
+    bottom: -100px; // salen desde abajo del contenedor
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; // no interfieren con clicks
+
+    span {
+      position: absolute;
+      display: block;
+      bottom: -150px;
+      border-radius: 50%;
+      opacity: 0.85;
+      animation: rise 12s linear infinite;
+    }
+
+    // Tamaños y colores variados
+    span:nth-child(1) {
+      width: 60px;
+      height: 60px;
+      left: 10%;
+      background: var(--color-primary);
+      animation-duration: 2s;
+      animation-delay: 0s;
+    }
+
+    span:nth-child(2) {
+      width: 100px;
+      height: 100px;
+      left: 30%;
+      background: var(--color-secondary);
+      animation-duration: 6s;
+      animation-delay: 1s;
+    }
+
+    span:nth-child(3) {
+      width: 50px;
+      height: 50px;
+      left: 50%;
+      background: var(--color-tertiary);
+      animation-duration: 7.5s;
+      animation-delay: 2s;
+    }
+
+    span:nth-child(4) {
+      width: 80px;
+      height: 80px;
+      left: 70%;
+      background: var(--color-primary);
+      animation-duration: 3s;
+      animation-delay: 0.5s;
+    }
+
+    span:nth-child(5) {
+      width: 35px;
+      height: 35px;
+      left: 85%;
+      background: var(--color-secondary);
+      animation-duration: 6.5s;
+      animation-delay: 1.5s;
+    }
+    span:nth-child(6) {
+      width: 120px;
+      height: 120px;
+      left: 15%;
+      background: var(--color-tertiary);
+      animation-duration: 6s;
+      animation-delay: 1s;
+    }
+
+    span:nth-child(7) {
+      width: 150px;
+      height: 150px;
+      left: 40%;
+      background: var(--color-primary);
+      animation-duration: 2s;
+      animation-delay: 2.5s;
+    }
+
+    span:nth-child(8) {
+      width: 180px;
+      height: 180px;
+      left: 60%;
+      background: var(--color-secondary);
+      animation-duration: 3s;
+      animation-delay: 1.5s;
+    }
+
+    span:nth-child(9) {
+      width: 100px;
+      height: 100px;
+      left: 75%;
+      background: var(--color-primary);
+      animation-duration: 2.5s;
+      animation-delay: 3s;
+    }
+
+    span:nth-child(10) {
+      width: 200px;
+      height: 200px;
+      left: 2%;
+      background: var(--color-tertiary);
+      animation-duration: 2.5s;
+      animation-delay: 2s;
+    }
+    span:nth-child(11) {
+      width: 160px;
+      height: 160px;
+      left: 90%;
+      background: var(--color-primary);
+      animation-duration: 2s;
+      animation-delay: 0s;
+    }
+  }
+
+  @keyframes rise {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 0.4;
+    }
+    100% {
+      transform: translateY(-110vh) scale(0.8);
+      opacity: 0;
     }
   }
 }
