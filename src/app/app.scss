@@ -24,4 +24,7 @@ html {
     height: 20px;
     cursor: none;
   }
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
