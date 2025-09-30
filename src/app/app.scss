@@ -1,3 +1,27 @@
 html {
   scroll-behavior: smooth;
 }
+#cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px; // ajustable
+  height: 10px;
+  border: 5px solid var(--color-secondary);
+  background-color: var(--color-secondary);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  z-index: 9999;
+
+  &.invert {
+    background: #000000a4;
+
+    border: none; // cursor negro cuando entra en secciones amarillas
+
+    width: 20px;
+    height: 20px;
+    cursor: none;
+  }
+}
