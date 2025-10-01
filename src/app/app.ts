@@ -7,6 +7,7 @@ import { Header } from './components/header/header';
 import { Proyectos } from './components/proyectos/proyectos';
 import { Contacto } from './components/contacto/contacto';
 import { Footer } from './components/footer/footer';
+import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-root',
   imports: [
@@ -74,5 +75,14 @@ export class App {
     this.cursor.style.transform = `translate(${this.currentX}px, ${this.currentY}px)`;
 
     requestAnimationFrame(() => this.animate());
+  }
+
+  constructor(private translate: TranslateService) {
+    // lee elección guardada o usa idioma del navegador
+    const saved = localStorage.getItem('app_lang');
+    const browser = navigator.language.split('-')[0];
+    const initial = saved || (['en', 'es'].includes(browser) ? browser : 'es');
+
+    this.translate.use(initial); // activa idioma sin recargar
   }
 }

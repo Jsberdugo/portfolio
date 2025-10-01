@@ -5,12 +5,13 @@
     [animationDelay]="10"
   >
     <img src="img/pfp-yellow.png" class="main-image" />
-    <h1 class="main-title">Hola, soy Juan Simón</h1>
+    <h1 class="main-title">
+      {{ "HERO.TITLE" | translate }}
+    </h1>
     <p class="main-description">
-      +2 años de experiencia.
-      <strong class="span"
-        >Ingeniero en Computación y Desarrollador Web.</strong
-      >
+      {{ "HERO.SUBTITLE1" | translate }}
+
+      <strong class="span"> {{ "HERO.SPAN" | translate }} </strong>
       Enfocado en desarrollo front-end y construcción de experiencias digitales
       atractivas. Siempre aprendiendo y adaptándome a nuevas tecnologías.
     </p>
