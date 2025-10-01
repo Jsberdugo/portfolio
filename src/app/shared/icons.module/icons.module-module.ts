@@ -13,6 +13,7 @@ import {
   faBriefcase,
   faUserCheck,
   faLaptopCode,
+  faEnvelope,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
@@ -31,7 +32,8 @@ export class IconsModule {
       faChalkboardTeacher,
       faBriefcase,
       faUserCheck,
-      faLaptopCode
+      faLaptopCode,
+      faEnvelope
     );
   }
 }

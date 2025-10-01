@@ -37,7 +37,59 @@
       margin: 20px auto;
     }
   }
+  .calltoaction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: var(--font-family);
 
+    a {
+      position: relative;
+      overflow: hidden;
+      padding: 5px 20px;
+      border-radius: 25px;
+      z-index: 1;
+      cursor: none;
+      transition: color 0.3s ease, border 0.3s ease;
+
+      // capa animada
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: var(--color-primary);
+        z-index: -1;
+        transition: width 0.4s ease, transform 0.2s ease;
+      }
+
+      &:hover::before {
+        width: 100%;
+      }
+      &:active {
+        transform: translateY(2px); // bajadita ligera
+      }
+    }
+
+    .contact-button {
+      background-color: var(--color-secondary);
+      border: none;
+      color: var(--color-text);
+    }
+
+    .linkedin-button {
+      border: solid 1px var(--color-text);
+      background: transparent;
+      color: var(--color-text);
+
+      &:hover {
+        border-color: transparent; // se quita el borde en hover
+      }
+    }
+  }
   .main-image {
     width: 190px;
     height: 190px;

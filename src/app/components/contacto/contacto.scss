@@ -119,7 +119,7 @@
     form {
       input,
       textarea {
-        border-radius: 10px;
+        border-radius: 25px;
         border: 1px solid #ddd;
         background: #fafafa;
         padding: 12px 14px;
@@ -132,28 +132,37 @@
           box-shadow: 0 0 0 3px rgba(247, 223, 30, 0.25);
         }
       }
-
       button {
         margin-top: 12px;
-        border-radius: 10px;
-
+        border-radius: 25px;
         font-size: 16px;
-        background: linear-gradient(
-          to right,
-          var(--color-primary) 0%,
-          // Amarillo fuerte (#FFD600 o el tuyo)
-          var(--color-secondary) 86%,
-          // Amarillo medio (#FFC107)
-          var(--color-tertiary) // Amarillo claro (#FFEB3B)
-        );
+        padding: 5px 20px;
+        background: #e9e9e9bd;
+        backdrop-filter: blur(25px);
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+          0 4px 6px -4px rgb(0 0 0 / 0.1);
         border: none;
-        color: #111;
+        color: var(--color-text);
         font-weight: 700;
-        transition: background 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        z-index: 0; // nivel base
+        transition: background 0.4s ease, box-shadow 0.2s ease,
+          transform 0.2s ease;
+        span,
+        i,
+        fa-icon {
+          position: relative;
+          z-index: 1; // el texto siempre visible
+        }
 
         &:hover {
-          background: var(--color-tertiary);
-          color: #fff;
+          background: var(--color-primary);
+        }
+        &:active {
+          // simula que el botón se hunde
+          box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.3); // sombra interna
+          transform: translateY(2px); // bajadita ligera
         }
       }
     }
