@@ -194,6 +194,7 @@ a {
   border-radius: 25px;
   overflow: hidden;
   background: var(--color-bg, #f5f7fa);
+  font-family: var(--font-family) !important;
 }
 
 .lang-select .ant-select-selector {
@@ -210,8 +211,8 @@ a {
 
 .lang-select .ant-select-selection-item {
   font-size: 13px;
-  font-weight: 500;
-  color: var(--color-text, #333);
+  font-weight: bold;
+  color: var(--color-text-light, #333);
 }
 
 .cdk-overlay-pane {
