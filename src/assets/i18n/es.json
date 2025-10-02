@@ -4,5 +4,125 @@
     "SUBTITLE1": "+2 años de experiencia.",
     "SUBTITLE2": "Enfocado en desarrollo front-end y construcción de experiencias digitales atractivas. Siempre aprendiendo y adaptándome a nuevas tecnologías.",
     "SPAN": "Ingeniero en Computación y Desarrollador Web."
+  },
+  "BUTTONS": {
+    "CONTACT_ME": "Contáctame",
+    "VIEW_PROJECTS": "Ver Proyectos",
+    "DOWNLOAD_CV": "Descargar CV"
+  },
+  "NAVIGATION": {
+    "HOME": "Inicio",
+    "EXPERIENCE": "Experiencia",
+    "PROJECTS": "Proyectos",
+    "CONTACT": "Contacto"
+  },
+
+  "EXPERIENCE": {
+    "TITLE": "Experiencia Laboral",
+    "JOBS": {
+      "WEBSIFFY": {
+        "TITLE": "WordPress Developer (Elementor & Divi)",
+        "COMPANY": "Websiffy",
+        "LOCATION": "Nueva Esparta, Venezuela",
+        "DATES": "Feb 2025 – Jun 2025",
+        "DESCRIPTION": "Creación de más de 18 sitios web responsivos para clientes en EE.UU. y Latinoamérica.",
+        "RESPONSIBILITY1": "Implementación de funciones personalizadas con plugins y ajustes de código.",
+        "RESPONSIBILITY2": "Colaboración con diseñadores para garantizar entregas puntuales y de alta calidad."
+      },
+      "ERYS_CREATIVE": {
+        "TITLE": "Freelance WordPress Developer",
+        "COMPANY": "Erys Creative",
+        "LOCATION": "Florida, Estados Unidos",
+        "DATES": "Dec 2024 – Feb 2025",
+        "DESCRIPTION": "Desarrollo de 6 sitios web personalizados enfocados en experiencia de usuario.",
+        "RESPONSIBILITY1": "Optimización de tiempos de carga y soporte post-lanzamiento."
+      },
+      "SERTECA": {
+        "TITLE": "Full-Stack Developer / Soporte Técnico",
+        "COMPANY": "Serteca",
+        "LOCATION": "Maracaibo, Venezuela",
+        "DATES": "Sep 2024 – Nov 2024",
+        "DESCRIPTION": "Desarrollo de base de una API RESTful y del front-end para un sistema ERM.",
+        "RESPONSIBILITY1": "Capacitación a desarrolladores sobre GitHub y configuración de repositorios."
+      },
+      "BEFASTER": {
+        "TITLE": "Front-End Developer / Soporte Técnico",
+        "COMPANY": "Befaster",
+        "LOCATION": "Santiago de Chile, Chile",
+        "DATES": "Sep 2023 – Sep 2024",
+        "DESCRIPTION": "Corrección de +600 errores tipográficos y adición de elementos personalizables para comercios.",
+        "RESPONSIBILITY1": "Diseño de interfaces de usuario y pantallas de inicio de sesión.",
+        "RESPONSIBILITY2": "Implementación de módulo de direcciones y configuración de monedas para usuarios internacionales."
+      }
+    }
+  },
+  "ABOUT": {
+    "TITLE": "Sobre mí",
+    "PART1": "Soy ",
+    "NAME": "Juan Simón",
+    "PART2": ", ingeniero en computación y desarrollador web especializado en ",
+    "SPECIALTY": "front-end",
+    "PART3": ". Me apasiona crear experiencias digitales atractivas, funcionales y de alto rendimiento.",
+    "PART4": "Con más de un año de experiencia, he trabajado en agencias como ",
+    "COMPANY1": "Erys Creative",
+    "PART5": " y ",
+    "COMPANY2": "Websiffy",
+    "PART6": ", desarrollando más de 20 sitios web con ",
+    "TECH1": "WordPress (Elementor y Divi)",
+    "PART7": ". Actualmente estoy enfocándome en ",
+    "TECH2": "Angular",
+    "PART8": " y frameworks modernos para crear interfaces dinámicas, escalables y optimizadas."
+  },
+  "PROJECTS": {
+    "TITLE": "Proyectos",
+    "EVOLUTION": {
+      "NAME": "Evolution All Services",
+      "TECH": "Angular"
+    },
+    "PHOENIX": {
+      "NAME": "Phoenix Company",
+      "TECH": "WordPress"
+    },
+    "MORELLS": {
+      "NAME": "Morells Plumbing",
+      "TECH": "WordPress"
+    },
+    "ERIK": {
+      "NAME": "Erik Remodeling",
+      "TECH": "WordPress"
+    },
+    "ELEGANT": {
+      "NAME": "Elegant Shower Doors",
+      "TECH": "WordPress"
+    },
+    "BLOWN": {
+      "NAME": "Blown Away Salon Studio",
+      "TECH": "WordPress"
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Contacto",
+    "INTRO": "¿Quieres que trabajemos juntos en tu próximo proyecto? Escríbeme en alguna de las opciones abajo o rellena el formulario.",
+    "FORM": {
+      "NAME": "Nombre",
+      "EMAIL": "Correo",
+      "PHONE": "Teléfono",
+      "MESSAGE": "Mensaje",
+      "SEND": "Enviar",
+      "SENDING": "Enviando..."
+    },
+    "MESSAGES": {
+      "THANK_YOU": "¡Gracias por tu mensaje! Te responderé pronto.",
+      "ERROR": "Lo siento, ocurrió un error, vuelve a intentarlo."
+    }
+  },
+  "FOOTER": {
+    "TITLE": "Juan Simón Berdugo",
+    "SUBTITLE": "Desarrollador Web & Ingeniero en Computación",
+    "QUICK_LINKS": "Enlaces Rápidos",
+    "ABOUT_ME": "Sobre mí",
+    "PORTFOLIO": "Portafolio",
+    "CONTACT": "Contacto",
+    "COPYRIGHT": "© 2025 Juan Simón Berdugo. Todos los derechos reservados."
   }
 }

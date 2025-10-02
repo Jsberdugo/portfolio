@@ -2,7 +2,127 @@
   "HERO": {
     "TITLE": "Hi, I am Juan Simón",
     "SUBTITLE1": "+2 years of experience.",
-    "SUBTITLE2": "Enfocado en desarrollo front-end y construcción de experiencias digitales atractivas. Siempre aprendiendo y adaptándome a nuevas tecnologías.",
+    "SUBTITLE2": "Focused on front-end development and building attractive digital experiences. Always learning and adapting to new technologies.",
     "SPAN": "Computer Engineer and Web Developer."
+  },
+  "BUTTONS": {
+    "CONTACT_ME": "Contact Me",
+    "VIEW_PROJECTS": "View Projects",
+    "DOWNLOAD_CV": "Download CV"
+  },
+  "NAVIGATION": {
+    "HOME": "Home",
+    "EXPERIENCE": "Experience",
+    "PROJECTS": "Projects",
+    "CONTACT": "Contact"
+  },
+
+  "EXPERIENCE": {
+    "TITLE": "Work Experience",
+    "JOBS": {
+      "WEBSIFFY": {
+        "TITLE": "WordPress Developer (Elementor & Divi)",
+        "COMPANY": "Websiffy",
+        "LOCATION": "Nueva Esparta, Venezuela",
+        "DATES": "Feb 2025 – Jun 2025",
+        "DESCRIPTION": "Created over 18 responsive websites for clients in the USA and Latin America.",
+        "RESPONSIBILITY1": "Implementation of custom functions with plugins and code adjustments.",
+        "RESPONSIBILITY2": "Collaboration with designers to ensure timely and high-quality deliveries."
+      },
+      "ERYS_CREATIVE": {
+        "TITLE": "Freelance WordPress Developer",
+        "COMPANY": "Erys Creative",
+        "LOCATION": "Florida, United States",
+        "DATES": "Dec 2024 – Feb 2025",
+        "DESCRIPTION": "Development of 6 custom websites focused on user experience.",
+        "RESPONSIBILITY1": "Optimization of loading times and post-launch support."
+      },
+      "SERTECA": {
+        "TITLE": "Full-Stack Developer / Technical Support",
+        "COMPANY": "Serteca",
+        "LOCATION": "Maracaibo, Venezuela",
+        "DATES": "Sep 2024 – Nov 2024",
+        "DESCRIPTION": "Development of a RESTful API foundation and front-end for an ERM system.",
+        "RESPONSIBILITY1": "Training developers on GitHub and repository configuration."
+      },
+      "BEFASTER": {
+        "TITLE": "Front-End Developer / Technical Support",
+        "COMPANY": "Befaster",
+        "LOCATION": "Santiago de Chile, Chile",
+        "DATES": "Sep 2023 – Sep 2024",
+        "DESCRIPTION": "Fixed over 600 typographical errors and added customizable elements for businesses.",
+        "RESPONSIBILITY1": "Design of user interfaces and login screens.",
+        "RESPONSIBILITY2": "Implementation of address module and currency configuration for international users."
+      }
+    }
+  },
+  "ABOUT": {
+    "TITLE": "About Me",
+    "PART1": "I'm ",
+    "NAME": "Juan Simón",
+    "PART2": ", a computer engineer and web developer specialized in ",
+    "SPECIALTY": "front-end",
+    "PART3": ". I'm passionate about creating attractive, functional, and high-performance digital experiences.",
+    "PART4": "With over a year of experience, I've worked at agencies like ",
+    "COMPANY1": "Erys Creative",
+    "PART5": " and ",
+    "COMPANY2": "Websiffy",
+    "PART6": ", developing more than 20 websites with ",
+    "TECH1": "WordPress (Elementor and Divi)",
+    "PART7": ". I'm currently focusing on ",
+    "TECH2": "Angular",
+    "PART8": " and modern frameworks to create dynamic, scalable, and optimized interfaces."
+  },
+  "PROJECTS": {
+    "TITLE": "Projects",
+    "EVOLUTION": {
+      "NAME": "Evolution All Services",
+      "TECH": "Angular"
+    },
+    "PHOENIX": {
+      "NAME": "Phoenix Company",
+      "TECH": "WordPress"
+    },
+    "MORELLS": {
+      "NAME": "Morells Plumbing",
+      "TECH": "WordPress"
+    },
+    "ERIK": {
+      "NAME": "Erik Remodeling",
+      "TECH": "WordPress"
+    },
+    "ELEGANT": {
+      "NAME": "Elegant Shower Doors",
+      "TECH": "WordPress"
+    },
+    "BLOWN": {
+      "NAME": "Blown Away Salon Studio",
+      "TECH": "WordPress"
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Contact",
+    "INTRO": "Do you want us to work together on your next project? Write to me through any of the options below or fill out the form.",
+    "FORM": {
+      "NAME": "Name",
+      "EMAIL": "Email",
+      "PHONE": "Phone",
+      "MESSAGE": "Message",
+      "SEND": "Send",
+      "SENDING": "Sending..."
+    },
+    "MESSAGES": {
+      "THANK_YOU": "Thank you for your message! I'll get back to you soon.",
+      "ERROR": "Sorry, an error occurred, please try again."
+    }
+  },
+  "FOOTER": {
+    "TITLE": "Juan Simón Berdugo",
+    "SUBTITLE": "Web Developer & Computer Engineer",
+    "QUICK_LINKS": "Quick Links",
+    "ABOUT_ME": "About Me",
+    "PORTFOLIO": "Portfolio",
+    "CONTACT": "Contact",
+    "COPYRIGHT": "© 2025 Juan Simón Berdugo. All rights reserved."
   }
 }

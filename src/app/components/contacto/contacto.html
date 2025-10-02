@@ -2,10 +2,9 @@
   <div class="contact-wrapper">
     <!-- Columna izquierda (amarilla) -->
     <div class="contact-info yellow-section">
-      <h2>Contacto</h2>
+      <h2>{{ "CONTACT.TITLE" | translate }}</h2>
       <p class="intro">
-        ¿Quieres que trabajemos juntos en tu próximo proyecto? Escríbeme en
-        alguna de las opciones abajo o rellena el formulario.
+        {{ "CONTACT.INTRO" | translate }}
       </p>
 
       <ul class="info-list">
@@ -49,32 +48,36 @@
         [nzLayout]="'vertical'"
       >
         <nz-form-item>
-          <nz-form-label for="name" [nzRequired]="true">Nombre</nz-form-label>
+          <nz-form-label for="name" [nzRequired]="true">{{
+            "CONTACT.FORM.NAME" | translate
+          }}</nz-form-label>
           <nz-form-control>
             <input nz-input id="name" formControlName="name" />
           </nz-form-control>
         </nz-form-item>
 
         <nz-form-item>
-          <nz-form-label for="email" [nzRequired]="true">Correo</nz-form-label>
+          <nz-form-label for="email" [nzRequired]="true">{{
+            "CONTACT.FORM.EMAIL" | translate
+          }}</nz-form-label>
           <nz-form-control>
             <input nz-input id="email" formControlName="email" type="email" />
           </nz-form-control>
         </nz-form-item>
 
         <nz-form-item>
-          <nz-form-label for="phone" [nzRequired]="true"
-            >Teléfono</nz-form-label
-          >
+          <nz-form-label for="phone" [nzRequired]="true">{{
+            "CONTACT.FORM.PHONE" | translate
+          }}</nz-form-label>
           <nz-form-control>
             <input nz-input id="phone" formControlName="phone" type="tel" />
           </nz-form-control>
         </nz-form-item>
 
         <nz-form-item>
-          <nz-form-label for="subject" [nzRequired]="true"
-            >Mensaje</nz-form-label
-          >
+          <nz-form-label for="subject" [nzRequired]="true">{{
+            "CONTACT.FORM.MESSAGE" | translate
+          }}</nz-form-label>
           <nz-form-control>
             <textarea
               nz-input
@@ -88,17 +91,18 @@
         <nz-form-item>
           <nz-form-control>
             <button nz-button nzType="primary" [disabled]="form.invalid">
-              @if (!loading) { Enviar } @else {
-              <i nz-icon nzType="loading" nzTheme="outline"></i> Enviando... }
+              @if (!loading) { {{ "CONTACT.FORM.SEND" | translate }} } @else {
+              <i nz-icon nzType="loading" nzTheme="outline"></i>
+              {{ "CONTACT.FORM.SENDING" | translate }} }
             </button>
           </nz-form-control>
         </nz-form-item>
       </form>
 
       @if (submitted) {
-      <p class="thank-you">¡Gracias por tu mensaje! Te responderé pronto.</p>
+      <p class="thank-you">{{ "CONTACT.MESSAGES.THANK_YOU" | translate }}</p>
       } @if (messageError) {
-      <p class="error">Lo siento, ocurrió un error, vuelve a intentarlo.</p>
+      <p class="error">{{ "CONTACT.MESSAGES.ERROR" | translate }}</p>
       }
     </div>
   </div>

@@ -2,8 +2,8 @@
   <div class="footer__container">
     <!-- Sección izquierda: info + logo -->
     <div class="footer__left">
-      <h3 class="footer__title">Juan Simón Berdugo</h3>
-      <p class="footer__text">Web Developer & Computer Engineer</p>
+      <h3 class="footer__title">{{ "FOOTER.TITLE" | translate }}</h3>
+      <p class="footer__text">{{ "FOOTER.SUBTITLE" | translate }}</p>
       <div class="footer__socials">
         <a
           href="https://linkedin.com/in/juanberdugo"
@@ -27,16 +27,22 @@
 
     <!-- Sección derecha: enlaces / navegación -->
     <div class="footer__right">
-      <h4 class="footer__subtitle">Enlaces Rápidos</h4>
+      <h4 class="footer__subtitle">{{ "FOOTER.QUICK_LINKS" | translate }}</h4>
       <ul class="footer__links">
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#proyectos">Portafolio</a></li>
-        <li><a href="#contact">Contacto</a></li>
+        <li>
+          <a href="#sobre-mi">{{ "FOOTER.ABOUT_ME" | translate }}</a>
+        </li>
+        <li>
+          <a href="#proyectos">{{ "FOOTER.PORTFOLIO" | translate }}</a>
+        </li>
+        <li>
+          <a href="#contact">{{ "FOOTER.CONTACT" | translate }}</a>
+        </li>
       </ul>
     </div>
   </div>
 
   <div class="footer__bottom">
-    <p>© 2025 Juan Simón Berdugo. Todos los derechos reservados.</p>
+    <p>{{ "FOOTER.COPYRIGHT" | translate }}</p>
   </div>
 </footer>

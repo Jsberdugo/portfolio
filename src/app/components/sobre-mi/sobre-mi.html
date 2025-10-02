@@ -13,14 +13,15 @@
     >
       <div class="sobremi-title">
         <fa-icon icon="user-check"></fa-icon>
-        <h1>Sobre mí</h1>
+        <h1>{{ "ABOUT.TITLE" | translate }}</h1>
       </div>
 
       <p>
-        Soy <strong>Juan Simón</strong>, ingeniero en computación y
-        desarrollador web especializado en <strong>front-end</strong>. Me
-        apasiona crear experiencias digitales atractivas, funcionales y de alto
-        rendimiento.
+        {{ "ABOUT.PART1" | translate
+        }}<strong>{{ "ABOUT.NAME" | translate }}</strong
+        >{{ "ABOUT.PART2" | translate
+        }}<strong>{{ "ABOUT.SPECIALTY" | translate }}</strong
+        >{{ "ABOUT.PART3" | translate }}
       </p>
     </div>
 
@@ -31,12 +32,15 @@
       [animationDelay]="300"
     >
       <p>
-        Con más de un año de experiencia, he trabajado en agencias como
-        <strong>Erys Creative</strong> y <strong>Websiffy</strong>,
-        desarrollando más de 20 sitios web con
-        <strong>WordPress (Elementor y Divi)</strong>. Actualmente estoy
-        enfocándome en <strong>Angular</strong> y frameworks modernos para crear
-        interfaces dinámicas, escalables y optimizadas.
+        {{ "ABOUT.PART4" | translate
+        }}<strong>{{ "ABOUT.COMPANY1" | translate }}</strong
+        >{{ "ABOUT.PART5" | translate
+        }}<strong>{{ "ABOUT.COMPANY2" | translate }}</strong
+        >{{ "ABOUT.PART6" | translate
+        }}<strong>{{ "ABOUT.TECH1" | translate }}</strong
+        >{{ "ABOUT.PART7" | translate
+        }}<strong>{{ "ABOUT.TECH2" | translate }}</strong
+        >{{ "ABOUT.PART8" | translate }}
       </p>
     </div>
   </div>

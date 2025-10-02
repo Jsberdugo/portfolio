@@ -12,6 +12,7 @@ import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 
 import { ContactService } from '../../shared/services/contact.service';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contacto',
@@ -23,6 +24,7 @@ import { ContactService } from '../../shared/services/contact.service';
     NzInputModule,
     NzButtonModule,
     AnimateOnScrollDirective,
+    TranslatePipe,
   ],
   templateUrl: './contacto.html',
   styleUrls: ['./contacto.scss'],

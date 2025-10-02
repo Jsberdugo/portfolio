@@ -2,7 +2,9 @@
   [(ngModel)]="current"
   (ngModelChange)="changeLanguage($event)"
   nzSize="small"
-  style="width: 55px"
+  class="lang-select"
+  nzStatus="warning"
+  nzShowArrow="false"
 >
   @for (l of languages; track l) {
   <nz-option [nzValue]="l.code" [nzLabel]="l.label"></nz-option>
