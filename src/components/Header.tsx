@@ -3,11 +3,11 @@ import { useTranslation } from 'react-i18next';
 import LanguageToggle from './LanguageToggle';
 
 const LINKS = [
-  { href: '#inicio', key: 'NAVIGATION.HOME' },
-  { href: '#experiencia', key: 'NAVIGATION.EXPERIENCE' },
-  { href: '#skills', key: 'NAVIGATION.SKILLS' },
-  { href: '#proyectos', key: 'NAVIGATION.PROJECTS' },
-  { href: '#contacto', key: 'NAVIGATION.CONTACT' },
+  { href: '#inicio', key: 'NAVIGATION.HOME', icon: 'fa-solid fa-house' },
+  { href: '#experiencia', key: 'NAVIGATION.EXPERIENCE', icon: 'fa-solid fa-briefcase' },
+  { href: '#skills', key: 'NAVIGATION.SKILLS', icon: 'fa-solid fa-layer-group' },
+  { href: '#proyectos', key: 'NAVIGATION.PROJECTS', icon: 'fa-solid fa-laptop-code' },
+  { href: '#contacto', key: 'NAVIGATION.CONTACT', icon: 'fa-solid fa-envelope' },
 ];
 
 export default function Header() {
@@ -23,24 +23,25 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed left-1/2 top-3 z-[1000] w-max -translate-x-1/2 rounded-full px-4 py-1.5 backdrop-blur-md transition-all duration-300 md:px-7 ${
+      className={`fixed left-0 right-0 top-0 z-[1000] flex items-center justify-around gap-1 px-2 py-2 backdrop-blur-md transition-all duration-300 md:left-1/2 md:right-auto md:top-3 md:w-max md:-translate-x-1/2 md:justify-center md:gap-8 md:rounded-full md:px-7 md:py-1.5 ${
         scrolled
-          ? 'bg-white/80 shadow-soft'
-          : 'bg-white/50 shadow-[0_4px_16px_rgba(0,0,0,0.06)]'
+          ? 'bg-white/85 shadow-soft'
+          : 'bg-white/70 shadow-[0_4px_16px_rgba(0,0,0,0.06)] md:bg-white/50'
       }`}
     >
-      <nav className="flex items-center gap-3 md:gap-8">
-        {LINKS.map((l) => (
-          <a
-            key={l.href}
-            href={l.href}
-            className="text-[13px] font-bold text-ink-light transition-colors duration-200 hover:text-tertiary md:text-sm"
-          >
+      {LINKS.map((l) => (
+        <a
+          key={l.href}
+          href={l.href}
+          className="flex flex-col items-center gap-0.5 text-ink-light transition-colors duration-200 hover:text-tertiary md:flex-row md:gap-0"
+        >
+          <i className={`${l.icon} text-base md:hidden`} />
+          <span className="whitespace-nowrap text-[10px] font-bold leading-tight md:text-sm">
             {t(l.key)}
-          </a>
-        ))}
-        <LanguageToggle />
-      </nav>
+          </span>
+        </a>
+      ))}
+      <LanguageToggle />
     </header>
   );
 }
