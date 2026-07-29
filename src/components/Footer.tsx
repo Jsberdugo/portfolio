@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import Reveal from './Reveal';
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -20,7 +21,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-bg px-6 pb-6 pt-12 font-sans text-ink-light">
-      <div className="mx-auto flex max-w-6xl flex-col justify-between gap-8 md:flex-row">
+      <Reveal className="mx-auto flex max-w-6xl flex-col justify-between gap-8 md:flex-row">
         <div className="flex-1">
           <h3 className="mb-1 font-mono text-xl text-ink">
             {t('FOOTER.TITLE')}
@@ -58,7 +59,7 @@ export default function Footer() {
             ))}
           </ul>
         </div>
-      </div>
+      </Reveal>
 
       <div className="mt-8 text-center text-sm text-ink-light">
         <p>{t('FOOTER.COPYRIGHT')}</p>

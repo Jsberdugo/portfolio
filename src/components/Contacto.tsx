@@ -1,6 +1,6 @@
 import { FormEvent, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useScrollReveal } from '../hooks/useScrollReveal';
+import Reveal from './Reveal';
 import { sendMessage } from '../services/contact';
 
 interface FormState {
@@ -14,7 +14,6 @@ const EMPTY: FormState = { name: '', email: '', phone: '', subject: '' };
 
 export default function Contacto() {
   const { t } = useTranslation();
-  const formRef = useScrollReveal<HTMLDivElement>('fade-up', 150);
 
   const [form, setForm] = useState<FormState>(EMPTY);
   const [loading, setLoading] = useState(false);
@@ -53,7 +52,10 @@ export default function Contacto() {
 
   return (
     <section id="contacto" className="flex justify-center px-4 py-20">
-      <div className="grid w-full max-w-5xl grid-cols-1 overflow-hidden rounded-3xl shadow-[0_8px_30px_rgba(0,0,0,0.1)] md:grid-cols-2">
+      <Reveal
+        direction="zoom"
+        className="grid w-full max-w-5xl grid-cols-1 overflow-hidden rounded-3xl shadow-[0_8px_30px_rgba(0,0,0,0.1)] md:grid-cols-2"
+      >
         {/* Left: yellow info */}
         <div className="yellow-section flex flex-col justify-center gap-7 bg-gradient-to-r from-primary via-secondary to-tertiary p-10 text-ink">
           <div>
@@ -111,10 +113,7 @@ export default function Contacto() {
         </div>
 
         {/* Right: form */}
-        <div
-          ref={formRef}
-          className="flex flex-col justify-center bg-white p-10"
-        >
+        <div className="flex flex-col justify-center bg-white p-10">
           <form onSubmit={onSubmit} className="flex flex-col gap-4">
             <div>
               <label className="mb-1 block text-sm font-semibold text-ink">
@@ -187,7 +186,7 @@ export default function Contacto() {
             </p>
           )}
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }

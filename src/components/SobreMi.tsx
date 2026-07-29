@@ -1,18 +1,15 @@
 import { useTranslation } from 'react-i18next';
-import { useScrollReveal } from '../hooks/useScrollReveal';
+import Reveal from './Reveal';
 
 export default function SobreMi() {
   const { t } = useTranslation();
-  const imgRef = useScrollReveal<HTMLDivElement>('fade-left');
-  const cardRef = useScrollReveal<HTMLDivElement>('fade-right', 100);
-  const detailRef = useScrollReveal<HTMLDivElement>('fade-right', 250);
 
   return (
     <section id="sobre-mi" className="w-full px-4 py-20 md:px-16">
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-8 md:grid-cols-2">
         {/* Image */}
-        <div
-          ref={imgRef}
+        <Reveal
+          direction="left"
           className="order-first flex items-center justify-center rounded-3xl bg-gradient-to-br from-primary/20 to-tertiary/20 p-6 md:row-span-2"
         >
           <img
@@ -20,13 +17,10 @@ export default function SobreMi() {
             alt="Ilustración desarrollador"
             className="max-w-[90%] rounded-xl object-contain drop-shadow-xl"
           />
-        </div>
+        </Reveal>
 
         {/* Presentation card */}
-        <div
-          ref={cardRef}
-          className="rounded-3xl bg-white p-7 shadow-card"
-        >
+        <Reveal direction="right" className="rounded-3xl bg-white p-7 shadow-card">
           <div className="mb-3 flex items-center gap-3">
             <i className="fa-solid fa-user-check text-2xl text-tertiary" />
             <h2 className="text-2xl font-bold text-ink">{t('ABOUT.TITLE')}</h2>
@@ -42,11 +36,12 @@ export default function SobreMi() {
             </strong>
             {t('ABOUT.PART3')}
           </p>
-        </div>
+        </Reveal>
 
         {/* Trajectory */}
-        <div
-          ref={detailRef}
+        <Reveal
+          direction="right"
+          delay={0.12}
           className="rounded-2xl border-l-4 border-tertiary bg-white/90 p-7"
         >
           <p className="leading-relaxed text-ink">
@@ -68,7 +63,7 @@ export default function SobreMi() {
             </strong>
             {t('ABOUT.PART8')}
           </p>
-        </div>
+        </Reveal>
       </div>
     </section>
   );
