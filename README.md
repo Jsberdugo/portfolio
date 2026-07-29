@@ -1,59 +1,53 @@
-# Portafolio
+# Portafolio — Juan Simón Berdugo
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.0.
+Portafolio personal construido en **React + Vite + TypeScript + Tailwind CSS** (migrado desde Angular).
 
-## Development server
+## Stack
 
-To start a local development server, run:
+- **React 18** + **Vite 5** (SPA, sin frameworks SSR)
+- **TypeScript**
+- **Tailwind CSS** para todo el estilado
+- **react-i18next** para internacionalización ES / EN (detección por navegador + `localStorage`)
+- Font Awesome (CDN) para iconografía
+- Formulario de contacto → Cloudflare Worker existente
 
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Scripts
 
 ```bash
-ng generate component component-name
+npm install      # instalar dependencias
+npm run dev      # servidor de desarrollo (http://localhost:5173)
+npm run build    # type-check + build de producción en /dist
+npm run preview  # previsualizar el build
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Estructura
 
-```bash
-ng generate --help
+```
+public/
+  img/            imágenes (pfp, proyectos, ilustraciones, favicon)
+  fonts/          Ubuntu + Liberation Mono
+  cv/             CV descargable en ES y EN (.docx)
+src/
+  components/     Header, Home, Experiencia, SobreMi, Skills, Proyectos, Contacto, Footer, LanguageToggle
+  hooks/          useScrollReveal, useCustomCursor
+  services/       contact (POST al worker)
+  locales/        es.json, en.json
+  i18n.ts         configuración de i18next
+  index.css       tokens de tema, animaciones, cursor, burbujas
 ```
 
-## Building
+## Gimmicks conservados y ampliados
 
-To build the project run:
+- Cursor personalizado con seguimiento suave que se invierte sobre las secciones amarillas
+- Burbujas animadas en el hero
+- Animaciones de revelado al hacer scroll (IntersectionObserver)
+- Texto con degradado animado (shimmer), badges de stack, timeline de experiencia
+- Toggle de idioma ES/EN
 
-```bash
-ng build
-```
+## Novedades (actualización de CV)
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Nuevo empleo **TopLevel — Full-Stack Developer (React / NestJS)**
+- Sección **Skills & Stack** (Frontend / Backend / Herramientas)
+- Bloque de **Educación** e **Idiomas**
+- Botón **Descargar CV** (sirve el `.docx` según el idioma activo)
+- Textos de "Sobre mí" y footer actualizados al perfil full-stack

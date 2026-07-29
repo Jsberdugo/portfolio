@@ -1,0 +1,143 @@
+{
+  "HERO": {
+    "TITLE": "Hola, soy Juan Simón",
+    "SUBTITLE1": "+2 años de experiencia.",
+    "SUBTITLE2": "Desarrollador full-stack con base sólida en React, en transición activa hacia NestJS y Prisma. Aprendo rápido y disfruto asumir nuevos retos técnicos.",
+    "SPAN": "Ingeniero en Computación y Desarrollador Full-Stack.",
+    "BADGE1": "React",
+    "BADGE2": "NestJS",
+    "BADGE3": "TypeScript",
+    "BADGE4": "Tailwind"
+  },
+  "BUTTONS": {
+    "CONTACT_ME": "Contáctame",
+    "VIEW_PROJECTS": "Ver Proyectos",
+    "DOWNLOAD_CV": "Descargar CV"
+  },
+  "NAVIGATION": {
+    "HOME": "Inicio",
+    "EXPERIENCE": "Experiencia",
+    "SKILLS": "Skills",
+    "PROJECTS": "Proyectos",
+    "CONTACT": "Contacto"
+  },
+  "EXPERIENCE": {
+    "TITLE": "Experiencia Laboral",
+    "SUBTITLE": "Un recorrido por las empresas y proyectos que han moldeado mi camino.",
+    "PRESENT": "Presente",
+    "JOBS": {
+      "TOPLEVEL": {
+        "TITLE": "Desarrollador Full-Stack (React / NestJS)",
+        "COMPANY": "TopLevel",
+        "LOCATION": "Maracaibo, Venezuela",
+        "DATES": "Nov 2025 – Presente",
+        "DESCRIPTION": "Salto de front-end a full-stack en 3 meses, combinando autoaprendizaje y desarrollo asistido por IA.",
+        "RESPONSIBILITY1": "Lideré la transición de páginas regionales hacia un e-commerce con carrito, cupones y saldo de usuario usando NestJS y Prisma.",
+        "RESPONSIBILITY2": "Gestioné la integración de la API de WhatsApp Business (respond.io), liderando el proyecto de principio a fin.",
+        "RESPONSIBILITY3": "Implementé rediseños UI/UX en 14 páginas con React, Tailwind CSS y shadcn/ui, entregando interfaces limpias y responsivas."
+      },
+      "WEBSIFFY": {
+        "TITLE": "WordPress Developer (Elementor & Divi)",
+        "COMPANY": "Websiffy",
+        "LOCATION": "Nueva Esparta, Venezuela",
+        "DATES": "Feb 2025 – Jun 2025",
+        "DESCRIPTION": "Creación de más de 18 sitios web responsivos para clientes en EE.UU. y Latinoamérica.",
+        "RESPONSIBILITY1": "Implementación de funciones personalizadas con plugins y ajustes de código.",
+        "RESPONSIBILITY2": "Colaboración con diseñadores para garantizar entregas puntuales y de alta calidad."
+      },
+      "ERYS_CREATIVE": {
+        "TITLE": "Freelance WordPress Developer",
+        "COMPANY": "Erys Creative",
+        "LOCATION": "Florida, Estados Unidos",
+        "DATES": "Dic 2024 – Feb 2025",
+        "DESCRIPTION": "Desarrollo de 6 sitios web personalizados enfocados en experiencia de usuario.",
+        "RESPONSIBILITY1": "Optimización de tiempos de carga y soporte post-lanzamiento."
+      },
+      "SERTECA": {
+        "TITLE": "Full-Stack Developer / Soporte Técnico",
+        "COMPANY": "Serteca",
+        "LOCATION": "Maracaibo, Venezuela",
+        "DATES": "Sep 2024 – Nov 2024",
+        "DESCRIPTION": "Desarrollo de base de una API RESTful y del front-end para un sistema ERM.",
+        "RESPONSIBILITY1": "Capacitación a desarrolladores sobre GitHub y configuración de repositorios."
+      },
+      "BEFASTER": {
+        "TITLE": "Front-End Developer / Soporte Técnico",
+        "COMPANY": "Befaster",
+        "LOCATION": "Santiago de Chile, Chile",
+        "DATES": "Sep 2023 – Sep 2024",
+        "DESCRIPTION": "Corrección de +600 errores tipográficos y adición de elementos personalizables para comercios.",
+        "RESPONSIBILITY1": "Diseño de interfaces de usuario y pantallas de inicio de sesión.",
+        "RESPONSIBILITY2": "Implementación de módulo de direcciones y configuración de monedas para usuarios internacionales."
+      }
+    }
+  },
+  "ABOUT": {
+    "TITLE": "Sobre mí",
+    "PART1": "Soy ",
+    "NAME": "Juan Simón",
+    "PART2": ", ingeniero en computación y desarrollador ",
+    "SPECIALTY": "full-stack",
+    "PART3": ". Me apasiona crear experiencias digitales atractivas, funcionales y de alto rendimiento.",
+    "PART4": "Empecé enfocado en ",
+    "COMPANY1": "front-end",
+    "PART5": " y hoy trabajo en ",
+    "COMPANY2": "TopLevel",
+    "PART6": " liderando la migración a e-commerce full-stack con ",
+    "TECH1": "NestJS y Prisma",
+    "PART7": ". Domino ",
+    "TECH2": "React, TypeScript y Tailwind CSS",
+    "PART8": " para construir interfaces dinámicas, escalables y optimizadas."
+  },
+  "SKILLS": {
+    "TITLE": "Habilidades & Stack",
+    "SUBTITLE": "Las tecnologías con las que construyo, día a día.",
+    "FRONTEND": "Frontend",
+    "BACKEND": "Backend",
+    "TOOLS": "Herramientas",
+    "LANGUAGES": "Idiomas",
+    "LANG_ES": "Español — Nativo",
+    "LANG_EN": "Inglés — C1/C2 (Proficient)"
+  },
+  "EDUCATION": {
+    "TITLE": "Educación",
+    "UNIVERSITY": "Universidad Rafael Belloso Chacín (URBE)",
+    "DEGREE": "Ingeniería en Computación",
+    "LOCATION": "Maracaibo, Venezuela"
+  },
+  "PROJECTS": {
+    "TITLE": "Proyectos",
+    "SUBTITLE": "Una selección de sitios y aplicaciones que he construido.",
+    "EVOLUTION": { "NAME": "Evolution All Services", "TECH": "Angular" },
+    "PHOENIX": { "NAME": "Phoenix Company", "TECH": "WordPress" },
+    "MORELLS": { "NAME": "Morells Plumbing", "TECH": "WordPress" },
+    "ERIK": { "NAME": "Erik Remodeling", "TECH": "WordPress" },
+    "ELEGANT": { "NAME": "Elegant Shower Doors", "TECH": "WordPress" },
+    "BLOWN": { "NAME": "Blown Away Salon Studio", "TECH": "WordPress" }
+  },
+  "CONTACT": {
+    "TITLE": "Contacto",
+    "INTRO": "¿Quieres que trabajemos juntos en tu próximo proyecto? Escríbeme en alguna de las opciones abajo o rellena el formulario.",
+    "FORM": {
+      "NAME": "Nombre",
+      "EMAIL": "Correo",
+      "PHONE": "Teléfono",
+      "MESSAGE": "Mensaje",
+      "SEND": "Enviar",
+      "SENDING": "Enviando..."
+    },
+    "MESSAGES": {
+      "THANK_YOU": "¡Gracias por tu mensaje! Te responderé pronto.",
+      "ERROR": "Lo siento, ocurrió un error, vuelve a intentarlo."
+    }
+  },
+  "FOOTER": {
+    "TITLE": "Juan Simón Berdugo",
+    "SUBTITLE": "Desarrollador Full-Stack & Ingeniero en Computación",
+    "QUICK_LINKS": "Enlaces Rápidos",
+    "ABOUT_ME": "Sobre mí",
+    "PORTFOLIO": "Portafolio",
+    "CONTACT": "Contacto",
+    "COPYRIGHT": "© 2025 Juan Simón Berdugo. Todos los derechos reservados."
+  }
+}

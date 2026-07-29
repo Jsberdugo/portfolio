@@ -1,0 +1,143 @@
+{
+  "HERO": {
+    "TITLE": "Hi, I'm Juan Simón",
+    "SUBTITLE1": "+2 years of experience.",
+    "SUBTITLE2": "Full-stack developer with a strong foundation in React, now actively expanding into NestJS and Prisma. I learn fast and enjoy taking on new technical challenges.",
+    "SPAN": "Computer Engineer and Full-Stack Developer.",
+    "BADGE1": "React",
+    "BADGE2": "NestJS",
+    "BADGE3": "TypeScript",
+    "BADGE4": "Tailwind"
+  },
+  "BUTTONS": {
+    "CONTACT_ME": "Contact Me",
+    "VIEW_PROJECTS": "View Projects",
+    "DOWNLOAD_CV": "Download CV"
+  },
+  "NAVIGATION": {
+    "HOME": "Home",
+    "EXPERIENCE": "Experience",
+    "SKILLS": "Skills",
+    "PROJECTS": "Projects",
+    "CONTACT": "Contact"
+  },
+  "EXPERIENCE": {
+    "TITLE": "Work Experience",
+    "SUBTITLE": "A journey through the companies and projects that shaped my path.",
+    "PRESENT": "Present",
+    "JOBS": {
+      "TOPLEVEL": {
+        "TITLE": "Full-Stack Developer (React / NestJS)",
+        "COMPANY": "TopLevel",
+        "LOCATION": "Maracaibo, Venezuela",
+        "DATES": "Nov 2025 – Present",
+        "DESCRIPTION": "Shift from front-end to full-stack in 3 months, combining self-directed learning and AI-assisted development.",
+        "RESPONSIBILITY1": "Led the transition of regional pages to an e-commerce model with cart, coupons and user balance using NestJS and Prisma.",
+        "RESPONSIBILITY2": "Managed the WhatsApp Business API integration (respond.io), leading the project end to end.",
+        "RESPONSIBILITY3": "Delivered UI/UX redesigns for 14 pages with React, Tailwind CSS and shadcn/ui — clean, responsive interfaces."
+      },
+      "WEBSIFFY": {
+        "TITLE": "WordPress Developer (Elementor & Divi)",
+        "COMPANY": "Websiffy",
+        "LOCATION": "Nueva Esparta, Venezuela",
+        "DATES": "Feb 2025 – Jun 2025",
+        "DESCRIPTION": "Created over 18 responsive websites for clients in the USA and Latin America.",
+        "RESPONSIBILITY1": "Implementation of custom functions with plugins and code adjustments.",
+        "RESPONSIBILITY2": "Collaboration with designers to ensure timely and high-quality deliveries."
+      },
+      "ERYS_CREATIVE": {
+        "TITLE": "Freelance WordPress Developer",
+        "COMPANY": "Erys Creative",
+        "LOCATION": "Florida, United States",
+        "DATES": "Dec 2024 – Feb 2025",
+        "DESCRIPTION": "Development of 6 custom websites focused on user experience.",
+        "RESPONSIBILITY1": "Optimization of loading times and post-launch support."
+      },
+      "SERTECA": {
+        "TITLE": "Full-Stack Developer / Technical Support",
+        "COMPANY": "Serteca",
+        "LOCATION": "Maracaibo, Venezuela",
+        "DATES": "Sep 2024 – Nov 2024",
+        "DESCRIPTION": "Development of a RESTful API foundation and front-end for an ERM system.",
+        "RESPONSIBILITY1": "Training developers on GitHub and repository configuration."
+      },
+      "BEFASTER": {
+        "TITLE": "Front-End Developer / Technical Support",
+        "COMPANY": "Befaster",
+        "LOCATION": "Santiago de Chile, Chile",
+        "DATES": "Sep 2023 – Sep 2024",
+        "DESCRIPTION": "Fixed over 600 typographical errors and added customizable elements for businesses.",
+        "RESPONSIBILITY1": "Design of user interfaces and login screens.",
+        "RESPONSIBILITY2": "Implementation of address module and currency configuration for international users."
+      }
+    }
+  },
+  "ABOUT": {
+    "TITLE": "About Me",
+    "PART1": "I'm ",
+    "NAME": "Juan Simón",
+    "PART2": ", a computer engineer and ",
+    "SPECIALTY": "full-stack",
+    "PART3": " developer. I'm passionate about creating attractive, functional and high-performance digital experiences.",
+    "PART4": "I started focused on ",
+    "COMPANY1": "front-end",
+    "PART5": " and today I work at ",
+    "COMPANY2": "TopLevel",
+    "PART6": " leading the migration to full-stack e-commerce with ",
+    "TECH1": "NestJS and Prisma",
+    "PART7": ". I master ",
+    "TECH2": "React, TypeScript and Tailwind CSS",
+    "PART8": " to build dynamic, scalable and optimized interfaces."
+  },
+  "SKILLS": {
+    "TITLE": "Skills & Stack",
+    "SUBTITLE": "The technologies I build with, every day.",
+    "FRONTEND": "Frontend",
+    "BACKEND": "Backend",
+    "TOOLS": "Tools",
+    "LANGUAGES": "Languages",
+    "LANG_ES": "Spanish — Native",
+    "LANG_EN": "English — C1/C2 (Proficient)"
+  },
+  "EDUCATION": {
+    "TITLE": "Education",
+    "UNIVERSITY": "Rafael Belloso Chacín University (URBE)",
+    "DEGREE": "Bachelor's in Computer Engineering",
+    "LOCATION": "Maracaibo, Venezuela"
+  },
+  "PROJECTS": {
+    "TITLE": "Projects",
+    "SUBTITLE": "A selection of sites and apps I have built.",
+    "EVOLUTION": { "NAME": "Evolution All Services", "TECH": "Angular" },
+    "PHOENIX": { "NAME": "Phoenix Company", "TECH": "WordPress" },
+    "MORELLS": { "NAME": "Morells Plumbing", "TECH": "WordPress" },
+    "ERIK": { "NAME": "Erik Remodeling", "TECH": "WordPress" },
+    "ELEGANT": { "NAME": "Elegant Shower Doors", "TECH": "WordPress" },
+    "BLOWN": { "NAME": "Blown Away Salon Studio", "TECH": "WordPress" }
+  },
+  "CONTACT": {
+    "TITLE": "Contact",
+    "INTRO": "Do you want us to work together on your next project? Write to me through any of the options below or fill out the form.",
+    "FORM": {
+      "NAME": "Name",
+      "EMAIL": "Email",
+      "PHONE": "Phone",
+      "MESSAGE": "Message",
+      "SEND": "Send",
+      "SENDING": "Sending..."
+    },
+    "MESSAGES": {
+      "THANK_YOU": "Thank you for your message! I'll get back to you soon.",
+      "ERROR": "Sorry, an error occurred, please try again."
+    }
+  },
+  "FOOTER": {
+    "TITLE": "Juan Simón Berdugo",
+    "SUBTITLE": "Full-Stack Developer & Computer Engineer",
+    "QUICK_LINKS": "Quick Links",
+    "ABOUT_ME": "About Me",
+    "PORTFOLIO": "Portfolio",
+    "CONTACT": "Contact",
+    "COPYRIGHT": "© 2025 Juan Simón Berdugo. All rights reserved."
+  }
+}
