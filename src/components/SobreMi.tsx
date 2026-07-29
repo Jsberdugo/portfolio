@@ -5,7 +5,7 @@ export default function SobreMi() {
   const { t } = useTranslation();
 
   return (
-    <section id="sobre-mi" className="w-full px-4 py-20 md:px-16">
+    <section id="sobre-mi" className="w-full overflow-hidden px-4 py-20 md:px-16">
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-8 md:grid-cols-2">
         {/* Image */}
         <Reveal
