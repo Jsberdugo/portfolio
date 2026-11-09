@@ -48,18 +48,18 @@ export default function Contacto() {
   };
 
   const inputCls =
-    'w-full rounded-full border border-neutral-200 bg-neutral-50 px-4 py-2.5 text-sm outline-none transition-all focus:border-primary focus:bg-white focus:shadow-glow';
+    'w-full rounded-2xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-base outline-none transition-all focus:border-primary focus:bg-white focus:shadow-glow';
 
   return (
-    <section id="contacto" className="flex justify-center px-4 py-20">
+    <section id="contacto" className="flex justify-center px-5 py-16 md:px-8 md:py-24">
       <Reveal
         direction="zoom"
-        className="grid w-full max-w-5xl grid-cols-1 overflow-hidden rounded-3xl shadow-[0_8px_30px_rgba(0,0,0,0.1)] md:grid-cols-2"
+        className="grid w-full max-w-6xl grid-cols-1 overflow-hidden rounded-[32px] border border-black/5 md:grid-cols-2"
       >
         {/* Left: yellow info */}
-        <div className="yellow-section flex flex-col justify-center gap-7 bg-gradient-to-r from-primary via-secondary to-tertiary p-10 text-ink">
+        <div className="yellow-section flex flex-col justify-center gap-7 bg-primary p-6 text-ink sm:p-10">
           <div>
-            <h2 className="mb-2 text-3xl font-bold">{t('CONTACT.TITLE')}</h2>
+            <h2 className="mb-3 text-4xl font-bold tracking-tight md:text-6xl">{t('CONTACT.TITLE')}</h2>
             <p className="font-mono text-[17px] leading-relaxed">
               {t('CONTACT.INTRO')}
             </p>
@@ -113,7 +113,7 @@ export default function Contacto() {
         </div>
 
         {/* Right: form */}
-        <div className="flex flex-col justify-center bg-white p-10">
+        <div className="flex flex-col justify-center bg-white p-6 sm:p-10">
           <form onSubmit={onSubmit} className="flex flex-col gap-4">
             <div>
               <label className="mb-1 block text-sm font-semibold text-ink">
@@ -159,7 +159,7 @@ export default function Contacto() {
             <button
               type="submit"
               disabled={!valid || loading}
-              className="mt-1 flex items-center justify-center gap-2 rounded-full bg-neutral-200 px-6 py-2.5 font-bold text-ink shadow-soft transition-all hover:bg-primary active:translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-50"
+              className="mt-1 flex items-center justify-center gap-2 rounded-full bg-ink px-6 py-3.5 font-bold text-white transition-all hover:-translate-y-0.5 active:translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-50"
             >
               {loading ? (
                 <>

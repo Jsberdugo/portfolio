@@ -12,7 +12,8 @@
   "BUTTONS": {
     "CONTACT_ME": "Contáctame",
     "VIEW_PROJECTS": "Ver Proyectos",
-    "DOWNLOAD_CV": "Descargar CV"
+    "DOWNLOAD_CV": "Descargar CV",
+    "VISIT": "Visitar"
   },
   "NAVIGATION": {
     "HOME": "Inicio",
@@ -107,7 +108,7 @@
   "PROJECTS": {
     "TITLE": "Proyectos",
     "SUBTITLE": "Una selección de sitios y aplicaciones que he construido.",
-    "EVOLUTION": { "NAME": "Evolution All Services", "TECH": "Angular" },
+    "PRIVEX": { "NAME": "Privéx Studio", "TECH": "React" },
     "PHOENIX": { "NAME": "Phoenix Company", "TECH": "WordPress" },
     "MORELLS": { "NAME": "Morells Plumbing", "TECH": "WordPress" },
     "ERIK": { "NAME": "Erik Remodeling", "TECH": "WordPress" },

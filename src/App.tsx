@@ -16,10 +16,10 @@ export default function App() {
       <Header />
       <main>
         <Home />
+        <Proyectos />
         <Experiencia />
         <SobreMi />
         <Skills />
-        <Proyectos />
         <Contacto />
       </main>
       <Footer />

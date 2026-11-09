@@ -37,13 +37,12 @@ export default function Reveal({
   const variants: Variants = {
     hidden: reduce
       ? { opacity: 0 }
-      : { opacity: 0, x: off.x ?? 0, y: off.y ?? 0, scale: off.scale ?? 1, filter: 'blur(6px)' },
+      : { opacity: 0, x: off.x ?? 0, y: off.y ?? 0, scale: off.scale ?? 1 },
     show: {
       opacity: 1,
       x: 0,
       y: 0,
       scale: 1,
-      filter: 'blur(0px)',
       transition: { type: 'spring', stiffness: 80, damping: 17, delay },
     },
   };
@@ -71,11 +70,10 @@ export const staggerContainer: Variants = {
 };
 
 export const staggerItem: Variants = {
-  hidden: { opacity: 0, y: 30, filter: 'blur(5px)' },
+  hidden: { opacity: 0, y: 30 },
   show: {
     opacity: 1,
     y: 0,
-    filter: 'blur(0px)',
     transition: { type: 'spring', stiffness: 85, damping: 16 },
   },
 };
