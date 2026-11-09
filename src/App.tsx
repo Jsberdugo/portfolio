@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import Home from './components/Home';
+import Ventajas from './components/Ventajas';
 import Experiencia from './components/Experiencia';
 import SobreMi from './components/SobreMi';
 import Skills from './components/Skills';
@@ -17,6 +18,7 @@ export default function App() {
       <main>
         <Home />
         <Proyectos />
+        <Ventajas />
         <Experiencia />
         <SobreMi />
         <Skills />

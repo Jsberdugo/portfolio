@@ -18,7 +18,7 @@ export default function Experiencia() {
     <section id="experiencia" className="px-2 py-8 md:px-4">
       <div className="mx-auto max-w-[1400px] rounded-[32px] bg-ink px-5 py-14 md:rounded-[48px] md:px-8 md:py-24">
         <div className="mx-auto max-w-6xl">
-          <SectionHeading dark index="02" title={t('EXPERIENCE.TITLE')} subtitle={t('EXPERIENCE.SUBTITLE')} />
+          <SectionHeading dark index="03" title={t('EXPERIENCE.TITLE')} subtitle={t('EXPERIENCE.SUBTITLE')} />
 
           <motion.div
             variants={staggerContainer}

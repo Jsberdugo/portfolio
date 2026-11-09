@@ -20,7 +20,7 @@ export default function SobreMi() {
         <Reveal direction="right">
           <p className="font-mono text-sm text-ink-light">
             <span className="mr-2 inline-block h-2 w-2 rounded-full bg-primary ring-1 ring-black/10" />
-            03
+            04
           </p>
           <h2 className="mt-3 text-4xl font-bold leading-[1.05] tracking-tight text-ink md:text-6xl">
             {t('ABOUT.TITLE')}

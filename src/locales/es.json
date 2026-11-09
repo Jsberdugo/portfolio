@@ -115,6 +115,35 @@
     "ELEGANT": { "NAME": "Elegant Shower Doors", "TECH": "WordPress" },
     "BLOWN": { "NAME": "Blown Away Salon Studio", "TECH": "WordPress" }
   },
+  "BENEFITS": {
+    "TITLE": "Por qué trabajar conmigo",
+    "SUBTITLE": "No solo entrego una web: construyo una herramienta que representa bien a tu negocio y te ayuda a conseguir clientes.",
+    "CTA": "Hablemos de tu proyecto",
+    "FAST": {
+      "TITLE": "Páginas rápidas",
+      "TEXT": "Código optimizado e imágenes ligeras para que tus visitantes no se vayan esperando a que cargue."
+    },
+    "BEAUTIFUL": {
+      "TITLE": "Diseño que enamora",
+      "TEXT": "Interfaces limpias y a medida, alineadas con tu marca. Nada de plantillas que se ven iguales a las demás."
+    },
+    "MOBILE": {
+      "TITLE": "Perfectas en el móvil",
+      "TEXT": "Cada pantalla se adapta al teléfono, la tablet y el escritorio, sin elementos rotos ni textos diminutos."
+    },
+    "SEO": {
+      "TITLE": "Listas para Google",
+      "TEXT": "Estructura semántica y buenas prácticas de SEO técnico para que tu negocio sea más fácil de encontrar."
+    },
+    "FULLSTACK": {
+      "TITLE": "Todo en una persona",
+      "TEXT": "Del diseño de la interfaz al backend, con carritos, cupones, cuentas de usuario e integraciones."
+    },
+    "COMMUNICATION": {
+      "TITLE": "Trato directo",
+      "TEXT": "Hablas conmigo durante todo el proyecto, en español o en inglés, y con soporte después del lanzamiento."
+    }
+  },
   "CONTACT": {
     "TITLE": "Contacto",
     "INTRO": "¿Quieres que trabajemos juntos en tu próximo proyecto? Escríbeme en alguna de las opciones abajo o rellena el formulario.",

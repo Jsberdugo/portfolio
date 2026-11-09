@@ -37,7 +37,7 @@ export default function Skills() {
   return (
     <section id="skills" className="px-5 py-16 md:px-8 md:py-24">
       <div className="mx-auto max-w-6xl">
-        <SectionHeading index="04" title={t('SKILLS.TITLE')} subtitle={t('SKILLS.SUBTITLE')} />
+        <SectionHeading index="05" title={t('SKILLS.TITLE')} subtitle={t('SKILLS.SUBTITLE')} />
 
         <motion.div
           variants={staggerContainer}
